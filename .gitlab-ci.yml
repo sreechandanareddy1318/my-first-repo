@@ -1,3 +1,5 @@
+image: python:3.10
+
 stages:
   - build
   - test
@@ -10,4 +12,4 @@ build-job:
 test-job:
   stage: test
   script:
-    - echo "Running tests"
+    - python app.py
